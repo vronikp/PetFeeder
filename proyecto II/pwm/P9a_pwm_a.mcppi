@@ -6,7 +6,7 @@ Value=-1
 [BUILD_TYPE]
 Value=0
 [ACTIVE_TAB]
-Value=pru blue.c
+Value=P9a_pwm_a.c
 [USE_EEPROM]
 Value=0
 [USE_HEAP]
@@ -17,15 +17,16 @@ Value=2000
 Value=
 [FILES]
 Count=1
-File0=inttm0.c
+File0=P9a_pwm_a.c
 [BINARIES]
 Count=0
 [IMAGES]
 Count=0
 ActiveImageIndex=-1
 [OPENED_FILES]
-Count=1
-File0=pru blue.c
+Count=2
+File0=P9a_pwm_a.c
+File1=servir.h
 [EEPROM]
 Count=0
 [ACTIVE_COMMENTS_FILES]
@@ -33,16 +34,16 @@ Count=0
 [OTHER_FILES]
 Count=0
 [SEARCH_PATH]
-Count=5
-Path0=C:\Program Files\mikroC PRO for PIC\defs\
-Path1=C:\Program Files\mikroC PRO for PIC\Uses\P16\
-Path2=C:\Users\Javier\Google Drive\lab. microcon\proyecto II\proye\
-Path3=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\defs\
-Path4=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\
+Count=3
+Path0=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\defs\
+Path1=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\
+Path2=C:\Users\Javier\Google Drive\lab. microcon\proyecto II\pwm\
 [HEADER_PATH]
-Count=0
+Count=1
+Path0=C:\Users\Javier\Google Drive\lab. microcon\proyecto II\pwm\
 [HEADERS]
-Count=0
+Count=1
+File0=servir.h
 [PLDS]
 Count=0
 [Useses]
@@ -92,5 +93,5 @@ File41=Trigonometry
 File42=UART
 [EXPANDED NODES]
 Node1=Sources
-Node2=Output Files
+Node2=Header Files
 Count=2

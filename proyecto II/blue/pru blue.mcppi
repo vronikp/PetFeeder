@@ -17,7 +17,7 @@ Value=2000
 Value=
 [FILES]
 Count=1
-File0=inttm0.c
+File0=pru blue.c
 [BINARIES]
 Count=0
 [IMAGES]
@@ -33,12 +33,11 @@ Count=0
 [OTHER_FILES]
 Count=0
 [SEARCH_PATH]
-Count=5
-Path0=C:\Program Files\mikroC PRO for PIC\defs\
-Path1=C:\Program Files\mikroC PRO for PIC\Uses\P16\
-Path2=C:\Users\Javier\Google Drive\lab. microcon\proyecto II\proye\
-Path3=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\defs\
-Path4=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\
+Count=4
+Path0=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\defs\
+Path1=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\
+Path2=C:\Users\Javier\Google Drive\lab. microcon\proyecto II\blue\
+Path3=C:\Users\Javier\Google Drive\lab. microcon\proyecto II\
 [HEADER_PATH]
 Count=0
 [HEADERS]
@@ -92,5 +91,4 @@ File41=Trigonometry
 File42=UART
 [EXPANDED NODES]
 Node1=Sources
-Node2=Output Files
-Count=2
+Count=1
