@@ -4,7 +4,7 @@ unsigned int counter;
 
 void alimentar(unsigned short tamanio) {
   PWM1_Start();                       // start PWM1
-  PWM1_Set_Duty(90);
+  PWM1_Set_Duty(255);
   Delay_ms(750);
   PWM1_Stop();
   if (tamanio == 'A'){

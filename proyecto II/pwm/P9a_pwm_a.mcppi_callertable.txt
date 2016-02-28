@@ -1,0 +1,8 @@
+main
+	InitMain
+		PWM1_Init
+	servir
+		PWM1_Start
+		PWM1_Set_Duty
+			Mul_16x16_U
+		PWM1_Stop
