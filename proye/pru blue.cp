@@ -1,5 +1,5 @@
-#line 1 "C:/Users/Javier/Google Drive/lab. microcon/proyecto II/proye/pru blue.c"
-#line 1 "c:/users/javier/google drive/lab. microcon/proyecto ii/proye/servir.c"
+#line 1 "D:/Users/Documents/GitHub/PetFeeder/proye/pru blue.c"
+#line 1 "d:/users/documents/github/petfeeder/proye/servir.c"
 void alimentar(unsigned short tamanio);
 unsigned short qtama (unsigned short kp);
 unsigned short teclado (unsigned short kp);
@@ -9,7 +9,7 @@ void delay();
 unsigned short qtama () {
  unsigned short kp;
  qtama:
-#line 19 "c:/users/javier/google drive/lab. microcon/proyecto ii/proye/servir.c"
+#line 19 "d:/users/documents/github/petfeeder/proye/servir.c"
  do {
  kp = Keypad_Key_Click();
  if (UART1_Data_Ready()){
@@ -46,26 +46,26 @@ unsigned short qtama () {
  return (kp);
  }
 
-void alimentar(unsigned short tamanio) {
- PWM1_Set_Duty(255);
+void alimentar(unsigned short tama) {
+ PWM1_Set_Duty(240);
  PWM1_Start();
- Delay_ms(100);
+ Delay_ms(1000);
  PWM1_Stop();
- if (tamanio == 'A'){
- Delay_ms(100);
+ if (tama = 65){
+ Delay_ms(1000);
  }
- else if (tamanio == 'B'){
- Delay_ms(200);
+ else if (tama = 66){
+ Delay_ms(1500);
  }
- else if (tamanio == 'C'){
- Delay_ms(300);
+ else if (tama = 67){
+ Delay_ms(2000);
  }
- else if (tamanio == 'D'){
- Delay_ms(350);
+ else if (tama = 68){
+ Delay_ms(2500);
  }
- PWM1_Set_Duty(30);
+ PWM1_Set_Duty(50);
  PWM1_Start();
- Delay_ms(100);
+ Delay_ms(1000);
  PWM1_Stop();
 }
 
@@ -247,7 +247,7 @@ unsigned short teclado (unsigned short kp) {
 void delay(){
  delay_ms(500);
 }
-#line 3 "C:/Users/Javier/Google Drive/lab. microcon/proyecto II/proye/pru blue.c"
+#line 3 "D:/Users/Documents/GitHub/PetFeeder/proye/pru blue.c"
 void interrupt();
 
 
@@ -261,15 +261,15 @@ char keypadPort at PORTD;
 
 
 
-sbit LCD_RS at RA4_bit;
-sbit LCD_EN at RA5_bit;
+sbit LCD_RS at RA5_bit;
+sbit LCD_EN at RA4_bit;
 sbit LCD_D4 at RA0_bit;
 sbit LCD_D5 at RA1_bit;
 sbit LCD_D6 at RA2_bit;
 sbit LCD_D7 at RA3_bit;
 
-sbit LCD_RS_Direction at TRISA4_bit;
-sbit LCD_EN_Direction at TRISA5_bit;
+sbit LCD_RS_Direction at TRISA5_bit;
+sbit LCD_EN_Direction at TRISA4_bit;
 sbit LCD_D4_Direction at TRISA0_bit;
 sbit LCD_D5_Direction at TRISA1_bit;
 sbit LCD_D6_Direction at TRISA2_bit;

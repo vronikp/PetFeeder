@@ -52,26 +52,26 @@ unsigned short qtama () {
   return (kp);
  }
 
-void alimentar(unsigned short tamanio) {
-  PWM1_Set_Duty(255);
+void alimentar(unsigned short tama) {
+  PWM1_Set_Duty(240);
   PWM1_Start();                       // start PWM1
-  Delay_ms(100);
+  Delay_ms(1000);
   PWM1_Stop();
-  if (tamanio == 'A'){
-     Delay_ms(100);
+  if (tama = 65){
+     Delay_ms(1000);
    }
-  else if (tamanio == 'B'){
-     Delay_ms(200);
+  else if (tama = 66){
+     Delay_ms(1500);
    }
-  else if (tamanio == 'C'){
-     Delay_ms(300);
+  else if (tama = 67){
+     Delay_ms(2000);
    }
-  else if (tamanio == 'D'){
-     Delay_ms(350);
+  else if (tama = 68){
+     Delay_ms(2500);
    }
-  PWM1_Set_Duty(30);
+  PWM1_Set_Duty(50);
   PWM1_Start();
-  Delay_ms(100);
+  Delay_ms(1000);
   PWM1_Stop();
 }
 

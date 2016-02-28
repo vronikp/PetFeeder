@@ -25,8 +25,8 @@ Count=0
 ActiveImageIndex=-1
 [OPENED_FILES]
 Count=2
-File0=servir.c
-File1=pru blue.c
+File0=pru blue.c
+File1=servir.c
 [EEPROM]
 Count=0
 [ACTIVE_COMMENTS_FILES]
@@ -35,12 +35,13 @@ Count=0
 Count=1
 File0=pru blue.mcppi
 [SEARCH_PATH]
-Count=5
+Count=6
 Path0=C:\Program Files\mikroC PRO for PIC\defs\
 Path1=C:\Program Files\mikroC PRO for PIC\Uses\P16\
-Path2=C:\Users\Javier\Google Drive\lab. microcon\proyecto II\proye\
-Path3=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\defs\
-Path4=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\
+Path2=D:\Users\Documents\GitHub\PetFeeder\proye\
+Path3=C:\Users\Javier\Google Drive\lab. microcon\proyecto II\proye\
+Path4=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\defs\
+Path5=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\
 [HEADER_PATH]
 Count=0
 [HEADERS]

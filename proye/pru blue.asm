@@ -119,19 +119,19 @@ L_end_qtama:
 
 _alimentar:
 
-;servir.c,55 :: 		void alimentar(unsigned short tamanio) {
-;servir.c,56 :: 		PWM1_Set_Duty(255);
-	MOVLW      255
+;servir.c,55 :: 		void alimentar(unsigned short tama) {
+;servir.c,56 :: 		PWM1_Set_Duty(240);
+	MOVLW      240
 	MOVWF      FARG_PWM1_Set_Duty_new_duty+0
 	CALL       _PWM1_Set_Duty+0
 ;servir.c,57 :: 		PWM1_Start();                       // start PWM1
 	CALL       _PWM1_Start+0
-;servir.c,58 :: 		Delay_ms(100);
-	MOVLW      2
+;servir.c,58 :: 		Delay_ms(1000);
+	MOVLW      11
 	MOVWF      R11+0
-	MOVLW      4
+	MOVLW      38
 	MOVWF      R12+0
-	MOVLW      186
+	MOVLW      93
 	MOVWF      R13+0
 L_alimentar13:
 	DECFSZ     R13+0, 1
@@ -141,19 +141,18 @@ L_alimentar13:
 	DECFSZ     R11+0, 1
 	GOTO       L_alimentar13
 	NOP
+	NOP
 ;servir.c,59 :: 		PWM1_Stop();
 	CALL       _PWM1_Stop+0
-;servir.c,60 :: 		if (tamanio == 'A'){
-	MOVF       FARG_alimentar_tamanio+0, 0
-	XORLW      65
-	BTFSS      STATUS+0, 2
-	GOTO       L_alimentar14
-;servir.c,61 :: 		Delay_ms(100);
-	MOVLW      2
+;servir.c,60 :: 		if (tama = 65){
+	MOVLW      65
+	MOVWF      FARG_alimentar_tama+0
+;servir.c,61 :: 		Delay_ms(1000);
+	MOVLW      11
 	MOVWF      R11+0
-	MOVLW      4
+	MOVLW      38
 	MOVWF      R12+0
-	MOVLW      186
+	MOVLW      93
 	MOVWF      R13+0
 L_alimentar15:
 	DECFSZ     R13+0, 1
@@ -163,21 +162,10 @@ L_alimentar15:
 	DECFSZ     R11+0, 1
 	GOTO       L_alimentar15
 	NOP
+	NOP
 ;servir.c,62 :: 		}
 	GOTO       L_alimentar16
-L_alimentar14:
-;servir.c,63 :: 		else if (tamanio == 'B'){
-	MOVF       FARG_alimentar_tamanio+0, 0
-	XORLW      66
-	BTFSS      STATUS+0, 2
-	GOTO       L_alimentar17
-;servir.c,64 :: 		Delay_ms(200);
-	MOVLW      3
-	MOVWF      R11+0
-	MOVLW      8
-	MOVWF      R12+0
-	MOVLW      119
-	MOVWF      R13+0
+;servir.c,64 :: 		Delay_ms(1500);
 L_alimentar18:
 	DECFSZ     R13+0, 1
 	GOTO       L_alimentar18
@@ -185,21 +173,11 @@ L_alimentar18:
 	GOTO       L_alimentar18
 	DECFSZ     R11+0, 1
 	GOTO       L_alimentar18
+	NOP
+	NOP
 ;servir.c,65 :: 		}
 	GOTO       L_alimentar19
-L_alimentar17:
-;servir.c,66 :: 		else if (tamanio == 'C'){
-	MOVF       FARG_alimentar_tamanio+0, 0
-	XORLW      67
-	BTFSS      STATUS+0, 2
-	GOTO       L_alimentar20
-;servir.c,67 :: 		Delay_ms(300);
-	MOVLW      4
-	MOVWF      R11+0
-	MOVLW      12
-	MOVWF      R12+0
-	MOVLW      51
-	MOVWF      R13+0
+;servir.c,67 :: 		Delay_ms(2000);
 L_alimentar21:
 	DECFSZ     R13+0, 1
 	GOTO       L_alimentar21
@@ -208,22 +186,9 @@ L_alimentar21:
 	DECFSZ     R11+0, 1
 	GOTO       L_alimentar21
 	NOP
-	NOP
 ;servir.c,68 :: 		}
 	GOTO       L_alimentar22
-L_alimentar20:
-;servir.c,69 :: 		else if (tamanio == 'D'){
-	MOVF       FARG_alimentar_tamanio+0, 0
-	XORLW      68
-	BTFSS      STATUS+0, 2
-	GOTO       L_alimentar23
-;servir.c,70 :: 		Delay_ms(350);
-	MOVLW      4
-	MOVWF      R11+0
-	MOVLW      142
-	MOVWF      R12+0
-	MOVLW      18
-	MOVWF      R13+0
+;servir.c,70 :: 		Delay_ms(2500);
 L_alimentar24:
 	DECFSZ     R13+0, 1
 	GOTO       L_alimentar24
@@ -233,22 +198,21 @@ L_alimentar24:
 	GOTO       L_alimentar24
 	NOP
 ;servir.c,71 :: 		}
-L_alimentar23:
 L_alimentar22:
 L_alimentar19:
 L_alimentar16:
-;servir.c,72 :: 		PWM1_Set_Duty(30);
-	MOVLW      30
+;servir.c,72 :: 		PWM1_Set_Duty(50);
+	MOVLW      50
 	MOVWF      FARG_PWM1_Set_Duty_new_duty+0
 	CALL       _PWM1_Set_Duty+0
 ;servir.c,73 :: 		PWM1_Start();
 	CALL       _PWM1_Start+0
-;servir.c,74 :: 		Delay_ms(100);
-	MOVLW      2
+;servir.c,74 :: 		Delay_ms(1000);
+	MOVLW      11
 	MOVWF      R11+0
-	MOVLW      4
+	MOVLW      38
 	MOVWF      R12+0
-	MOVLW      186
+	MOVLW      93
 	MOVWF      R13+0
 L_alimentar25:
 	DECFSZ     R13+0, 1
@@ -257,6 +221,7 @@ L_alimentar25:
 	GOTO       L_alimentar25
 	DECFSZ     R11+0, 1
 	GOTO       L_alimentar25
+	NOP
 	NOP
 ;servir.c,75 :: 		PWM1_Stop();
 	CALL       _PWM1_Stop+0
@@ -1505,7 +1470,7 @@ L_interrupt105:
 L__interrupt119:
 ;pru blue.c,121 :: 		alimentar(tama);
 	MOVF       _tama+0, 0
-	MOVWF      FARG_alimentar_tamanio+0
+	MOVWF      FARG_alimentar_tama+0
 	CALL       _alimentar+0
 ;pru blue.c,122 :: 		counter = 0;
 	CLRF       _counter+0

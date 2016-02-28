@@ -13,15 +13,15 @@ char  keypadPort at PORTD;
 // End Keypad module connections
 
 // LCD module connections
-sbit LCD_RS at RA4_bit;
-sbit LCD_EN at RA5_bit;
+sbit LCD_RS at RA5_bit;
+sbit LCD_EN at RA4_bit;
 sbit LCD_D4 at RA0_bit;
 sbit LCD_D5 at RA1_bit;
 sbit LCD_D6 at RA2_bit;
 sbit LCD_D7 at RA3_bit;
 
-sbit LCD_RS_Direction at TRISA4_bit;
-sbit LCD_EN_Direction at TRISA5_bit;
+sbit LCD_RS_Direction at TRISA5_bit;
+sbit LCD_EN_Direction at TRISA4_bit;
 sbit LCD_D4_Direction at TRISA0_bit;
 sbit LCD_D5_Direction at TRISA1_bit;
 sbit LCD_D6_Direction at TRISA2_bit;
